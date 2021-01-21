@@ -1,7 +1,7 @@
 # get-tags
 Count and extract tags from Stack Enterprise.
 
-This procedure explains how to use the *get-tags.py* script to call the Stack Enterprise tags API and extract tag names. 
+This procedure explains how to use the *get-tags.py* script to call the Stack Enterprise *tags* API and extract tag names. 
 It counts the tags and saves the output to a file named *output.txt* in the same directory.
 
 # Prerequisite
