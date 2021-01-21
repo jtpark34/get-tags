@@ -14,3 +14,6 @@ Download and install Python 3.6: https://www.python.org/downloads/release/python
     
 **Note:** This script only outputs tags from pages 1-14 of the API results.
 If/when there are additional pages of results, add those to the list of links in the script.
+
+# More Resources
+Stack Overflow API docs: https://linkedin.stackenterprise.co/api/docs
