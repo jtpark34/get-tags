@@ -9,7 +9,7 @@ Download and install Python 3.6: https://www.python.org/downloads/release/python
 
 # Procedure
 1. Create an API access key: https://linkedin.stackenterprise.co/users/access-keys/149
-2. Save and open *get-tags.py* and find/replace *keyID* with your unique access key. Save your changes.
+2. Open *get-tags.py* and replace *keyID* with your unique access key. Save your changes.
 3. Run the script: *python3.6 get-tags.py* 
     
 **Note:** This script only outputs tags from pages 1-14 of the API results.
