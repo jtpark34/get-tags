@@ -16,4 +16,4 @@ Download and install Python 3.6: https://www.python.org/downloads/release/python
 If/when there are additional pages of results, add those to the list of links in the script.
 
 # More Resources
-Stack Overflow API docs: https://linkedin.stackenterprise.co/api/docs
+Stack Enterprise API docs: https://linkedin.stackenterprise.co/api/docs
