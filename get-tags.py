@@ -21,10 +21,10 @@ orig_stdout = sys.stdout
 sys.stdout = open("output.txt", "wt") # creates and opens file, and records output
 
 for url in links: # loops through array
-    response = requests.get(url) # stores GET request to the API as a variable
-    data = response.json() # stores the JSON response as a variable
+    response = requests.get(url) # stores GET requests to the API as a variable
+    data = response.json() # stores the JSON responses as a variable
 
-    for i in data['items']: # loops through nested dictionary
+    for i in data['items']: # loops through nested dictionary in JSON responses
         print(i['name']) # prints value for key "name"
 
 sys.stdout.close() # closes file
