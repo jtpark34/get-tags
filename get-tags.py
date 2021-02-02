@@ -32,7 +32,7 @@ sys.stdout=orig_stdout
 
 with open('output.txt') as f: 
     count = 0 # sets initial count as zero
-    for line in f:
+    for line in f: # loops through output.txt file
         count += 1 # counts each line in the file (count = count + 1) and stores as a variable
 
 print(f"There are {count} tags. \nCheck output.txt to view your results.") # prints formatted string with total count and prompts user to check output file.
