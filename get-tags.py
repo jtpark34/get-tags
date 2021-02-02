@@ -18,21 +18,21 @@ links = ['https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=
 'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=14']
 
 orig_stdout = sys.stdout
-sys.stdout = open("output.txt", "wt")
+sys.stdout = open("output.txt", "wt") # creates and opens file and records output
 
-for url in links:
-    response = requests.get(url)
-    data = response.json()
+for url in links: # loops through array
+    response = requests.get(url) # makes a GET request to the API and stores function as a variable
+    data = response.json() # stores the json response as a variable
 
-    for i in data['items']:
-        print(i['name'])
+    for i in data['items']: # loops through nested dictionary
+        print(i['name']) # prints value for key "name"
 
-sys.stdout.close()
+sys.stdout.close() # closes file
 sys.stdout=orig_stdout
 
-with open('output.txt') as f:
-    count = 0
+with open('output.txt') as f: 
+    count = 0 # sets initial count as zero
     for line in f:
-        count += 1
+        count += 1 # counts each line in the file (count = count + 1) and stores as a variable
 
-print(f"There are {count} tags. \nCheck output.txt to view your results.")
+print(f"There are {count} tags. \nCheck output.txt to view your results.") # prints formatted string with total count and prompts user to check output file.
