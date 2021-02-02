@@ -18,11 +18,11 @@ links = ['https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=
 'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=14']
 
 orig_stdout = sys.stdout
-sys.stdout = open("output.txt", "wt") # creates and opens file and records output
+sys.stdout = open("output.txt", "wt") # creates and opens file, and records output
 
 for url in links: # loops through array
     response = requests.get(url) # makes a GET request to the API and stores function as a variable
-    data = response.json() # stores the json response as a variable
+    data = response.json() # stores the JSON response as a variable
 
     for i in data['items']: # loops through nested dictionary
         print(i['name']) # prints value for key "name"
