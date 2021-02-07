@@ -2,20 +2,22 @@ import json
 import requests
 import sys
 
-links = ['https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=1',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=2',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=3',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=4',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=5',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=6',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=7',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=8',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=9',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=10',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=11',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=12',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=13',
-'https://linkedin.stackenterprise.co/api/2.2/tags?key=keyID((&pagesize=100&page=14']
+keyID = "keyID"
+
+links = [f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=1',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=2',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=3',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=4',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=5',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=6',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=7',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=8',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=9',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=10',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=11',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=12',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=13',
+f'https://linkedin.stackenterprise.co/api/2.2/tags?key={keyID}((&pagesize=100&page=14']
 
 orig_stdout = sys.stdout
 sys.stdout = open("output.txt", "wt") # creates and opens file, and records output
